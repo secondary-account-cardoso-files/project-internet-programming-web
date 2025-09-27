@@ -13,36 +13,6 @@ body {
   min-height: 100vh;
 }
 
-.site-header {
-  height: 10vh;
-  min-height: 60px;
-  max-height: 120px;
-  background: #0056b3;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-li {
-  list-style: none;
-  margin: 8px 0;
-  background-color: #222;
-  padding: 8px;
-  border-radius: 8%;
-  &:hover {
-    background-color: black;
-  }
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: block;
-}
-
 .grid-layout {
   display: grid;
   grid-template-columns: 15% 85%;
@@ -53,11 +23,115 @@ li a {
 
 .grid-layout nav {
   grid-column: 1;
-  background: #e9ecef;
-  padding: 24px 16px;
-  min-width: 0;
-  height: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding: clamp(1.8rem, 3vw, 2.4rem);
+  background: linear-gradient(205deg, #0f172a 0%, #312e81 60%, #4338ca 110%);
+  color: #e2e8f0;
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 0 32px 32px 0;
+  box-shadow: 0 28px 45px rgba(15, 23, 42, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-layout nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(99, 102, 241, 0.55),
+    transparent 60%
+  );
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.grid-layout nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.grid-layout nav li {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.grid-layout nav li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(99, 102, 241, 0.25),
+    rgba(14, 165, 233, 0.15)
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.grid-layout nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(226, 232, 240, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(226, 232, 240, 0.05);
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease,
+    color 0.25s ease;
+  position: relative;
+}
+
+.grid-layout nav li a::after {
+  content: "›";
+  font-size: 1.1rem;
+  opacity: 0.4;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.grid-layout nav li a:hover,
+.grid-layout nav li a:focus-visible {
+  background: rgba(99, 102, 241, 0.32);
+  color: #f8fafc;
+  transform: translateX(6px);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.32);
+}
+
+.grid-layout nav li a:hover::after,
+.grid-layout nav li a:focus-visible::after {
+  transform: translateX(4px);
+  opacity: 0.75;
+}
+
+.grid-layout nav li a:focus-visible {
+  outline: 2px solid rgba(129, 140, 248, 0.65);
+  outline-offset: 3px;
+}
+
+.grid-layout nav li a:active {
+  transform: translateX(3px) scale(0.99);
+}
+
+.grid-layout nav li:hover::before,
+.grid-layout nav li a:focus-visible::before {
+  opacity: 1;
 }
 
 .grid-layout section {
@@ -601,6 +675,28 @@ button:hover {
   .collab-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .grid-layout nav {
+    background: linear-gradient(160deg, #1e1b4b 0%, #312e81 60%);
+    border-radius: 20px;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.2);
+  }
+  .grid-layout nav,
+  .grid-layout section {
+    height: auto;
+    min-height: 0;
+    padding: 16px 8px;
+  }
+  .grid-layout nav {
+    background: #e9ecef;
+  }
+  .grid-layout section {
+    background: #fff;
+  }
 }
 
 @media (max-width: 520px) {
@@ -618,24 +714,5 @@ button:hover {
   .field-30 {
     max-width: 100%;
     flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .grid-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .grid-layout nav,
-  .grid-layout section {
-    height: auto;
-    min-height: 0;
-    padding: 16px 8px;
-  }
-  .grid-layout nav {
-    background: #e9ecef;
-  }
-  .grid-layout section {
-    background: #fff;
   }
 }
