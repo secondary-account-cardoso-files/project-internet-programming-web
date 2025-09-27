@@ -34,9 +34,9 @@ body {
   flex-direction: column;
   gap: 2.2rem;
   padding: clamp(1.8rem, 3vw, 2.4rem);
-  background: linear-gradient(205deg, #0f172a 0%, #312e81 60%, #4338ca 110%);
+  background: linear-gradient(205deg, #0f172a 0%, #5d5d5f 60%, #1a191f 110%);
   color: #e2e8f0;
-  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  border-right: 1px solid rgba(9, 10, 10, 0.12);
   border-radius: 0 32px 32px 0;
   box-shadow: 0 28px 45px rgba(15, 23, 42, 0.35);
   position: relative;
@@ -49,7 +49,7 @@ body {
   inset: 0;
   background: radial-gradient(
     circle at top left,
-    rgba(99, 102, 241, 0.55),
+    rgba(185, 185, 228, 0.55),
     transparent 60%
   );
   opacity: 0.85;
