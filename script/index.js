@@ -957,6 +957,36 @@ function renderLivrosPage() {
         autor: "J.K. Rowling",
         img: "https://m.media-amazon.com/images/I/81PHloIwKnL.jpg",
       },
+      {
+        id: 22,
+        titulo: "O Hobbit",
+        autor: "J.R.R. Tolkien",
+        img: "https://m.media-amazon.com/images/I/91b0C2YNSrL._SY466_.jpg",
+      },
+      {
+        id: 23,
+        titulo: "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
+        autor: "C.S. Lewis",
+        img: "https://m.media-amazon.com/images/I/71aJZfkkKaL._SY342_.jpg",
+      },
+      {
+        id: 24,
+        titulo: "A Guerra dos Tronos",
+        autor: "George R.R. Martin",
+        img: "https://m.media-amazon.com/images/I/81t2CVWEsUL._SY466_.jpg",
+      },
+      {
+        id: 25,
+        titulo: "Mistborn: O Império Final",
+        autor: "Brandon Sanderson",
+        img: "https://m.media-amazon.com/images/I/41E5ApijHoL._SX342_SY445_ML2_.jpg",
+      },
+      {
+        id: 26,
+        titulo: "O Nome do Vento",
+        autor: "Patrick Rothfuss",
+        img: "https://m.media-amazon.com/images/I/51NiIHPz4wL._SY445_SX342_ML2_.jpg",
+      },
     ],
     tecnologia: [
       {
@@ -1001,6 +1031,37 @@ function renderLivrosPage() {
         autor: "Edécio Fernando",
         img: "https://m.media-amazon.com/images/I/71X7hMhMEUL.SY385.jpg",
       },
+      {
+        id: 27,
+        titulo: "Clean Architecture",
+        autor: "Robert C. Martin",
+        img: "https://m.media-amazon.com/images/I/71stxGw9JgL._UF1000,1000_QL80_.jpg",
+      },
+      {
+        id: 28,
+        titulo:
+          "Design Patterns: Elements of Reusable Object-Oriented Software",
+        autor: "Erich Gamma",
+        img: "https://m.media-amazon.com/images/I/81gtKoapHFL._SY466_.jpg",
+      },
+      {
+        id: 29,
+        titulo: "Refactoring: Improving the Design of Existing Code",
+        autor: "Martin Fowler",
+        img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQFmdbXTxXctSjtdiwf0Zlp8m82hU1UIjJZtA-42zACyduBtdIQIYakXGH0J4-iv-D33Lo0vKWbONNAnsTlUumfr0Wp030y2F7a1RlVjZbj",
+      },
+      {
+        id: 30,
+        titulo: "You Don't Know JS Yet: Scope & Closures",
+        autor: "Kyle Simpson",
+        img: "https://m.media-amazon.com/images/I/41mXGJV8PbL._SY445_SX342_ML2_.jpg",
+      },
+      {
+        id: 31,
+        titulo: "Introduction to Algorithms",
+        autor: "Thomas H. Cormen",
+        img: "https://m.media-amazon.com/images/I/61Mw06x2XcL._SY342_.jpg",
+      },
     ],
     filosofia: [
       {
@@ -1044,6 +1105,36 @@ function renderLivrosPage() {
         titulo: "Discurso do Método",
         autor: "René Descartes",
         img: "https://m.media-amazon.com/images/I/71efC7HuPjL.SY466.jpg",
+      },
+      {
+        id: 32,
+        titulo: "Meditações",
+        autor: "Marco Aurélio",
+        img: "https://m.media-amazon.com/images/I/41bQU67zLnL._SY445_SX342_ML2_.jpg",
+      },
+      {
+        id: 33,
+        titulo: "Além do Bem e do Mal",
+        autor: "Friedrich Nietzsche",
+        img: "https://m.media-amazon.com/images/I/41ySmcsNVzL._SX342_SY445_ML2_.jpg",
+      },
+      {
+        id: 34,
+        titulo: "A Arte da Guerra",
+        autor: "Sun Tzu",
+        img: "https://m.media-amazon.com/images/I/71N4oeWwYlL._SY466_.jpg",
+      },
+      {
+        id: 35,
+        titulo: "Ética",
+        autor: "Baruch Spinoza",
+        img: "https://m.media-amazon.com/images/I/41MP2CXJJYL._SY445_SX342_QL70_ML2_.jpg",
+      },
+      {
+        id: 36,
+        titulo: "Crítica da Razão Pura",
+        autor: "Immanuel Kant",
+        img: "https://m.media-amazon.com/images/I/41++pyuuLYS._SY445_SX342_QL70_ML2_.jpg",
       },
     ],
   };
