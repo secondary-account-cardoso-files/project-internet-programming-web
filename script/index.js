@@ -1182,7 +1182,7 @@ function renderLivrosPage() {
       }', '${
         livro.autor
       }', '${categoria}')" style="background-color: #5a2d82; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin-top: auto;" onmouseover="this.style.backgroundColor='#7a3dbb'" onmouseout="this.style.backgroundColor='#5a2d82'">
-            ${usuario ? "Alugar" : "Selecionar Cliente"}
+            ${usuario ? "Alugar" : "Alugar Livro"}
           </button>
         </div>
       `;
